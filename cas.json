@@ -1,0 +1,81 @@
+{
+    "user": "doejw",
+    "attributes": {
+        "eduPersonAffiliation": [
+            "student"
+        ],
+        "muohioeduCurrentCourseSubjectNumber": [
+            "MME313",
+            "MME314",
+            "MME311",
+            "ENG313"
+        ],
+        "muohioeduClass": [
+            "Junior"
+        ],
+        "muohioeduCollege": [
+            "Col of Engineering & Computing"
+        ],
+        "muohioeduEmployeeType": [
+            "Student Regular"
+        ],
+        "muohioeduPrimaryLocationCode": [
+            "oxf"
+        ],
+        "eduPersonPrincipalName": [
+            "doejw@miamioh.edu"
+        ],
+        "muohioeduMajorCode": [
+            "apme"
+        ],
+        "givenName": [
+            "Jane"
+        ],
+        "muohioeduDepartment": [
+            "Housing, Dining, Recreation & Business Services",
+            "Library"
+        ],
+        "muohioeduEmployeeTypeCode": [
+            "sp"
+        ],
+        "muohioeduMajor": [
+            "Mechanical Engineering"
+        ],
+        "muohioeduClassCode": [
+            "03"
+        ],
+        "credentialType": [
+            "UsernamePasswordCredential",
+            "DuoCredential"
+        ],
+        "muohioeduAffiliation": [
+            "Student Employee",
+            "Student"
+        ],
+        "muohioeduDivision": [
+            "Finance and Business Services",
+            "University Libraries"
+        ],
+        "muohioeduPrimaryLocation": [
+            "Oxford"
+        ],
+        "authenticationMethod": [
+            "LdapAuthenticationHandler",
+            "mfa-duo"
+        ],
+        "muohioeduDepartmentCode": [
+            "hdg",
+            "ulb"
+        ],
+        "muohioeduCurrentCourseCRN": [
+            "20202074503",
+            "20202076109",
+            "20202025663",
+            "20202082244"
+        ],
+        "muohioeduPrimaryAffiliationCode": [
+            "und"
+        ]
+    },
+    "pt": "ST-412-cy8u5WCcLhnTebAJoLUnW-CFIzo-mualcast22"
+}
