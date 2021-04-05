@@ -36,6 +36,11 @@ $(document).ready(function () {
         JSON.parse(res.responseText)[0] &&
         JSON.parse(res.responseText)[0].shortdef
       ) {
+        // console.log('before the hood');
+        $('#under-the-hood')
+          .text(JSON.stringify(JSON.parse(res.responseText), null, 2))
+          .show();
+        // console.log('after the hood');
         let json = JSON.parse(res.responseText)[0];
         // console.log('found:', json);
         let defs = json.shortdef;
