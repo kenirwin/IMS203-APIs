@@ -16,10 +16,12 @@
          event.preventDefault()
          var lines = $('#data-input').val().split('\n');
          console.log(lines);
+         $('#output-table tbody').html('');
          while(lines.length > 0) {
             firstElement = lines.shift();
             secondElement = lines.shift() || '';
             $('#output-table tbody').append('<tr><td>'+firstElement+'</td><td>'+secondElement+'</td></tr>');
+            $('#copy-output').text('Copy').addClass('btn-primary').removeClass('btn-success');
          }
          });
 
