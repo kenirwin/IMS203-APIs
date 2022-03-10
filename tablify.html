@@ -21,31 +21,30 @@
          var lines = $('#data-input').val().split('\n');
          console.log(lines);
          while(lines.length > 0) {
-             firstElement = lines.shift();
-             secondElement = lines.shift() || '';
-             $('#output-table tbody').append('<tr><td>'+firstElement+'</td><td>'+secondElement+'</td></tr>');
+            firstElement = lines.shift();
+            secondElement = lines.shift() || '';
+            $('#output-table tbody').append('<tr><td>'+firstElement+'</td><td>'+secondElement+'</td></tr>');
          }
          });
 
          $('#copy-output').click(function(e) {
             event.preventDefault();
-             let range, selection;
-             let text = document.getElementById('output-table');
-                
-                if (document.body.createTextRange) {
-                    range = document.body.createTextRange();
-                    range.moveToElementText(text);
-                    range.select();
-                } else if (window.getSelection) {
-                    selection = window.getSelection();        
-                    range = document.createRange();
-                    range.selectNodeContents(text);
-                    selection.removeAllRanges();
-                    selection.addRange(range);
-                }
-                	document.execCommand('copy');
-	window.getSelection().removeAllRanges();
-	document.getElementById("copy-output").value="Copied";
+            let range, selection;
+            let text = document.getElementById('output-table');
+            if (document.body.createTextRange) {
+                range = document.body.createTextRange();
+                range.moveToElementText(text);
+                range.select();
+            } else if (window.getSelection) {
+                selection = window.getSelection();        
+                range = document.createRange();
+                range.selectNodeContents(text);
+                selection.removeAllRanges();
+                selection.addRange(range);
+            }
+            document.execCommand('copy');
+            window.getSelection().removeAllRanges();
+            $('#copy-output').text('Copied!').removeClass('btn-primary').addClass('btn-success');
          });
      });
 </script>
@@ -62,8 +61,8 @@
 
     <div class="col-md-6 container" id="output">
         <h2>Output</h2>
-        <button id="copy-output">Copy</button>
         <table id="output-table" class="table table-striped"><tbody></tbody></table>
+        <button id="copy-output" class="btn btn-primary">Copy</button>
     </div>
 </body>
 </html>
