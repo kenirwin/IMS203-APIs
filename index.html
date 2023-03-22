@@ -30,10 +30,21 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js" integrity="sha512-UwcC/iaz5ziHX7V6LjSKaXgCuRRqbTp1QHpbOJ4l1nw2/boCfZ2KlFIqBUA/uRVF0onbREnY9do8rM/uT/ilqw==" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+<script>
+    $(document).ready(function() {
+        $('a').attr('target', '_blank');
+    });
+</script>
 </head>
 <body class="container">
 <h1>API Examples</h1>
     <ul>
+        <li class="section"><span class="fa-li"><i class="fas fa-map"></i></span>OpenAI/ChatGPT Integration + WeatherAPI <i class="fa fa-robot"></i>
+            <ul class="info">
+                <li><a href="https://platform.openai.com/docs/api-reference">ChatGPT AI Documentation</a>, <a href="https://dev.meteostat.net/api/">Meteostat Weather API Documentation</a></li>
+                <li><a href="https://fancy-ray-pajamas.cyclic.app/">Demo</a> (<a href="https://github.com/kenirwin/chat-gpt-api">Code</a>)</li>
+                <li>Requires API key</li>
+            </ul>
         <li class="section"><span class="fa-li"><i class="fas fa-map"></i></span>Merriam-Webster Word Lookup <i class="fas fa-book"></i>
             <ul class="info"> 
                 <li><a href="https://dictionaryapi.com/products/api-collegiate-dictionary">Documentation</a></li>
@@ -66,7 +77,7 @@
             <ul class="info">
                 <li>Search for photos in the Library of Congress by keyword</li>
                 <li><a href="https://www.loc.gov/pictures/api">Documentation</a></li>
-                <li><a href="https://kenirwin.github.io/LOC-image-API/">Demo</a> (<a href="https://github.com/kenirwin/LOC-image-API">Demo Code</a>)</li>
+                <li><a href="https://important-attire-calf.cyclic.app/">Demo</a> (<a href="https://github.com/kenirwin/LOC-image-API">Demo Code</a>)</li>
             </ul>
         </li>
         <li class="section">Biodiversity Heritage Library: Alternative Interface <i class="far fa-copy"></i>
